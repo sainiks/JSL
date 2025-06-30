@@ -9,11 +9,9 @@ const coding = ['js', 'ruby', 'java','python','cpp'];
 // //undefined,because forEach does not return anything
 
 
-
 // const myNums = [1,2,3,4,5,6,7,8,9,10];
 // const newNums = myNums.filter( (num) => num > 4 )
 // console.log(newNums);
-
 
 
 const myNums = [1,2,3,4,5,6,7,8,9,10];
@@ -70,4 +68,3 @@ const publishBooks = books.filter ((bk) => {
     return bk.publish >= 1995 && bk.genre === 'History';
 } )
 console.log(publishBooks);
-
