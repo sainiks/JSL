@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // We are creating a variable called 'accountId'.
 // 'const' means its value cannot be changed later.
 // We set its value to 144553.
@@ -20,11 +21,21 @@ accountCity = "Jaipur";
 
 // We are creating a variable called 'accountState' using 'let'.
 // We are not giving it a value yet. So, its value is 'undefined'.
+=======
+const accountId =144553
+let accountEmail= "kunalsaini20090360@gmail.com"
+var accountPassword= "12345"
+
+accountCity ="Jaipur" 
+// you can also reverse this type varibles in code without defineing it in the memmory
+
+>>>>>>> c9fbc1d (refactor variable comments for clarity and consistency)
 let accountState;
 
 // If we try to change 'accountId', we will get an error because it's a 'const'.
 // accountId = 2; // This line is a comment, so it won't run. It shows what would cause an error.
 
+<<<<<<< HEAD
 // We are changing the value of 'accountEmail'. This is okay because we used 'let'.
 accountEmail = "poonam@gmail.com";
 
@@ -43,4 +54,13 @@ accountCity = "Delhi";
 // This line will show all the variable values in a nice table in the output area (console).
 console.table([accountId, accountEmail, accountPassword, accountCity, accountState]);
 
+=======
+/* 
+-----------------------------------------------------
+Prefer not to use var
+Because of issue in Block scope and functional scope 
+-----------------------------------------------------
+*/ 
+>>>>>>> c9fbc1d (refactor variable comments for clarity and consistency)
 
+console.table([accountId,accountEmail,accountPassword,accountCity,accountState]);
