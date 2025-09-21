@@ -1,10 +1,11 @@
 // singleton
 // singleton can be created with object literal only in js 
 // Object.create()
+
 // let nm = new object();
 // 1. object literal
-// 2. constructor function
-
+// 2. constructor function 
+ 
 
 
 const mySym = Symbol("key2");// this is a symbol and it is how symbols are created 
@@ -38,8 +39,8 @@ JsUser.greeting = function(){
     console.log("Hello Js User");
 }
 JsUser.greetingtwo = function(){
-    console.log(`Hello Js User, ${this["full name"]}`); // this will refer to the object itself
-    console.log(`Hello Js User, ${this.age}`); // this will refer to the object itself
+    console.log(`Hello Js User, ${this["full name"]}`); // "this" will refer to the object itself
+    console.log(`Hello Js User, ${this.age}`); // "this" will refer to the object itself
 }
 console.log(JsUser.greeting()); // Hello Js User
 console.log(JsUser.greetingtwo()); // Hello Js User, ${this.name}

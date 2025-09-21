@@ -29,7 +29,9 @@ const hundreds = 1000000
 
 
 // console.log(Math.random()); // It always gives values between 0 and 1
+
 // console.log((Math.random()*10) + 1); // It always gives values between 1 and 10 to avoid 0 point values
+
 // console.log(Math.floor(Math.random()*10) + 1); // It always gives values between 1 and 10 to avoid 0 point values
 
 const min = 10

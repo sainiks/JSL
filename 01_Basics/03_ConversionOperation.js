@@ -1,18 +1,18 @@
 let score = "kunal" 
-
+let score1 = "33"
 
 // console.log(typeof score);
 // console.log(typeof (score));
 
 let valueinnumber = Number(score)
+let valuenumber = Number(score1)
 // console.log(typeof valueinnumber);
 // console.log(valueinnumber);
 
 /*
-" 33 " => 33 
-" 33abc " => NaN - Not A Number 
+"33" => 33 
+"33abc" => NaN - Not A Number but the type is still number 
  true => 1  ; false => 0
-
 */
 
 let isLoggedIn = "kunal"
@@ -22,7 +22,7 @@ let booleanIsLoggedIn= Boolean(isLoggedIn)
 
 /*
  1 => true ; 0 => false
- "" => false 
+ " " => false 
  "kunal" => true
 */
 
@@ -31,6 +31,7 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 // console.log(stringNumber);
 // console.log(typeof stringNumber);
+
 
 
 //************************* Operations *************************
@@ -54,10 +55,17 @@ let str3 = str1 + str2
 
 
 // console.log("1" + 2 );
+// console.log(typeof("1" + 2 ));
+
 // console.log(1 + "2");
+// console.log(typeof(1 + "2"));
+
 // console.log("1" + 2 + 2 );
+// console.log(typeof("1" + 2 + 2));
+
 // console.log(1 + 2 + "2");
-// 
+// console.log(typeof(1 + 2 + "2"));
+
 // console.log(((3 + 4) * 5) % 3 );
 
 // console.log(true);
@@ -70,7 +78,7 @@ num1 = num2 = num3 = 2+2
 let gameCounter = 100
 ++gameCounter; // prefix here value is taken for use 100 and then incremented 101
 gameCounter++; // postfix here value is firstly incremented from 101 to 102 and then use.
-console.log(gameCounter);
+// console.log(gameCounter);
 
 // link to study prefix and postfix from mdn web docs
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment

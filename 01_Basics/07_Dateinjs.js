@@ -1,13 +1,27 @@
 // Dates 
+// 1st jan 1970 00:00:00 UTC
 
 let myDate = new Date()
 // console.log(myDate.toString());
+// Fri Jun 14 2024 12:34:56 GMT+0000 (Coordinated Universal Time)
+
 // console.log(myDate.toDateString());
+// Fri Jun 14 2024
+
 // console.log(myDate.toISOString());
+// 2024-06-14T12:34:56.789Z
+
 // console.log(myDate.toJSON());
-// console.log(myDate.toLocaleDateString());
+// 2024-06-14T12:34:56.789Z
+
+// console.log(myDate.toLocaleDateString()); 
+// 6/14/2024
+
 // console.log(myDate.toLocaleString());
-// console.log(typeof myDate);
+// 6/14/2024, 12:34:56 PM
+
+// console.log(typeof myDate); 
+// object
 
 
 // let myCreatedDate = new Date (2023, 0, 23)

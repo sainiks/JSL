@@ -33,13 +33,16 @@ Reference Type (Non-Primitive)
 3. Function
 */
 
+// Array 
 const heros = ["shaktiman" , "naagraj","doga"]
 
+// Object 
 let myObj={
     name:"kunal",
     age: 20,
 }
 
+// Function
 const myFunction = function(){
     console.log("Hello World");
 }
@@ -54,26 +57,28 @@ console.log(typeof myFunction);
 
 // Stack and Heap Memory
 //------------------------
-// Stack (Primitive) and Heap (Non-Primitive) Memory
+// Stack (Primitive) 
+// this will give you copy of the original value
+
+// Heap (Non-Primitive) Memory
+// this will give you reference of the original value
 
 // Example of Stack Memory
-
+//-------------------------
 let myYoutubename = "kunalsainidotcom"
-
 let anothername = myYoutubename
 anothername = "kunalsaini"
 console.log(anothername);
 console.log(myYoutubename);
 
-// Example of Heap Memory
 
+// Example of Heap Memory
+//-------------------------
 let userOne = {
     email : "user@google.com",
     upi : "user@hdfc"
 }
-
 let userTwo = userOne
 userTwo.email = "kunal@google.com"
-
 console.log(userOne);
 console.log(userTwo);

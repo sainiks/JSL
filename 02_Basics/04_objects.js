@@ -7,7 +7,7 @@ const tinderUser = {}
 // this is not a singleton object
 
 tinderUser.id = "123abc"
-tinderUser.name = "kunal"
+tinderUser["name"] = "kunal"
 tinderUser.isLoggedIn = false
 
 // console.log(tinderUser); // { id: '123abc', name: 'kunal', isLoggedIn: false }
@@ -70,7 +70,7 @@ user[1].email
 
 // console.log(tinderUser.hasOwnProperty("isLoggedIn")); // to check if the object has the property or not
 
-
+// destructuring of object
 
 const course = {
     coursename : "JS for Beginners",
@@ -81,7 +81,7 @@ const course = {
 // course.courseInstructor
 
 const {courseInstructor: instructor}= course // this is how we destructure an object // here you can change the name of the variable and set it to the value of the object of your own name
-console.log(instructor); // Kunal Saini
+// console.log(instructor); // Kunal Saini
 
 // It is a good practice to destructure the object in the function parameter itself
 //It is react specific example 
