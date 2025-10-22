@@ -23,11 +23,11 @@ const user = {
 // chai()
 
 
-// const chai = () => { // arrow function using "this"
-    // let username = " kunal "
-    // console.log(this);
-// }
-// chai ()
+const chai = () => { // arrow function using "this"
+    let username = " kunal "
+    console.log(this);
+}
+chai ()
 
 
 // const addtwo = (num1 , num2)=>{

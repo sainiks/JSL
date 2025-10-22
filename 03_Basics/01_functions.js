@@ -15,10 +15,11 @@ function sayMyName(){
 // Ways to declare a function
 
 // Way No:- 1.
-// function addTwoNumbers(number1 , number2){ // function addTwoNumbers(parameters)
-    // console.log(number1 + number2);
-// }
+function addTwoNumbers(number1 , number2){ // function function_name(parameters)
+    console.log(number1 + number2);
+}
 
+addTwoNumbers()
 // addTwoNumbers(3,4) // addTwoNumbers(arguments)
 // addTwoNumbers(5,"k") // arguments
 // addTwoNumbers(5,null) // arguments
@@ -44,14 +45,15 @@ function loginUserMessage(username = "Anonymous"){
     return `${username}!! just logged in our system`;
 }
 
-// console.log(loginUserMessage("kunal saini"));
-// console.log(loginUserMessage());
+// console.log(loginUserMessage("kunal saini")); // kunal saini will override the default value from Anonymous to kunal saini
+// console.log(loginUserMessage()); // Anonymous 
 
 function calculateCarPrice(val1 , val2 ,...num1){
     return num1 
 }
 
-// console.log(calculateCarPrice(200 , 400 ,330 ,440))
+// console.log(calculateCarPrice(200 , 400 ,330 ,440)) 
+// [330, 440] as num1 is rest operator it will take all the remaining values in the form of array like val1 and val2 are assigned to 200 and 400 respectively.
 
 
 const user ={
@@ -77,4 +79,4 @@ function returnSecondValue(getarray){
 }
 
 // console.log(returnSecondValue(myNewArray))
-console.log(returnSecondValue([200, 400 ,500, 1000]))
+// console.log(returnSecondValue([200, 400 ,500, 1000]))
