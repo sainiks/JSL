@@ -1,8 +1,8 @@
 const coding = ['js', 'ruby', 'java', 'pythono','cpp'];
 
-// coding.forEach( function (val){
-    // console.log(val);
-// })
+coding.forEach( function (val){
+    console.log(val);
+})
 
 
 // coding.forEach( (item) =>{

@@ -57,5 +57,4 @@ if(userLoggedIn && debitCard ){
 
 if(loggedInFromGoogle || loggedInFromEmail){
     console.log("User logged in  ...");
-    
 }

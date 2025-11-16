@@ -2,7 +2,8 @@
 
 // if(userEmail){
     // console.log("Got your email")
-// }else{
+// }
+    // else{
     // console.log("Don't have user email");
     // 
 // }
@@ -23,6 +24,7 @@
 // if (Object.keys(emptyobj).length === 0 ){
     // console.log("Object is empty");
 // }
+// here Object.keys() returns an array of the object's own enumerable property names
 
 
 // Nullish coalescing operator (??) >> null or undefined 

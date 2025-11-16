@@ -38,7 +38,7 @@ const programming = ['js', 'cpp', 'rb', 'py','java'];
     // console.log(key)
 // }
 // for in loop will not work on map, it will give error
-
+// as it is not iterable 
 
 
 
