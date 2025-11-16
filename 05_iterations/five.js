@@ -1,22 +1,25 @@
 const coding = ['js', 'ruby', 'java', 'pythono','cpp'];
 
-coding.forEach( function (val){
-    console.log(val);
-})
-
-
-// coding.forEach( (item) =>{
-    // console.log(item);
+// normal function
+// coding.forEach( function (val){
+//     console.log(val);
 // })
 
+//arrow function
+// coding.forEach( (item) =>{
+//     console.log(item);
+// })
 
+// callback function
 // function printme(item){
-    // console.log(item);
+//     console.log(item);
 // }
-// coding.forEach(printme);
 
+//  coding.forEach(printme);
+
+// arrow function with index and array
 // coding.forEach( (item,index,arr) => {
-    // console.log(item,index,arr);
+//     console.log(item,index,arr);
 // })
 
 
@@ -35,9 +38,7 @@ const mycoding = [
 },
 ]
 
-
 mycoding.forEach ( (item ) => {
     console.log(item.langname);
+    console.log(item.langfilename);
 })
-
-
