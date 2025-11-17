@@ -1,4 +1,4 @@
-const coding = ['js', 'ruby', 'java','python','cpp'];
+// const coding = ['js', 'ruby', 'java','python','cpp'];
 
 // const values = coding.forEach( (item) => {
     // console.log(item);
@@ -13,25 +13,26 @@ const coding = ['js', 'ruby', 'java','python','cpp'];
 // const newNums = myNums.filter( (num) => num > 4 )
 // console.log(newNums);
 
-
-const myNums = [1,2,3,4,5,6,7,8,9,10];
+// METHOD 1
+// const myNums = [1,2,3,4,5,6,7,8,9,10];
 // const newNums = myNums.filter( (num) => {
-    // return num >4 // This is a filter function that returns a new array with numbers greater than 4
+//     return num >4 // This is a filter function that returns a new array with numbers greater than 4
     // the curly braces are used the scope 
     // and the return statement is used to return the value is must be used
 // } )
 // console.log(newNums);
 
-
-const newNums = []
-myNums.forEach((num) => {
-    if (num > 4 ){
-        newNums.push(num); 
-    // This is a forEach loop that pushes the numbers greater than 4 into a new array
-    }
-})
+// or METHOD 2
+// const newNums = []
+// myNums.forEach((num) => {
+//     if (num > 4 ){
+//         newNums.push(num); 
+//     // This is a forEach loop that pushes the numbers greater than 4 into a new array
+//     }
+// })
 
 // console.log(newNums);
+
 
 const books = [
     {
@@ -62,9 +63,16 @@ const books = [
         title: 'Book Nine', genre : 'Non-Fiction', publish: 1981, edition: 1989
     },
 ];
+
+let userbook = books.filter((bk) => bk.genre === 'History')
+userbook = books.filter((bk) => {
+    return bk.publish >= 1995 && bk.genre === 'History'});
+console.log(userbook);
+
+
 // const genreBooks = books.filter((bk) => bk.genre === 'History')
 // console .log(genreBooks);
-const publishBooks = books.filter ((bk) => {
-    return bk.publish >= 1995 && bk.genre === 'History';
-} )
-console.log(publishBooks);
+// const publishBooks = books.filter ((bk) => {
+//     return bk.publish >= 1995 && bk.genre === 'History';
+// } )
+// console.log(publishBooks);

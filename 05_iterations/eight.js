@@ -8,16 +8,16 @@
 // The callback function is called for each element of the array, and the return value is
 // used as the new value for the accumulator. The final value of the accumulator is returned
 // as the result of the reduce method.
-const myNums = [1,2,3];
+// const myNums = [1,2,3];
 // const mytotal = myNums.reduce(function (acc , curval) {
     // console.log(`acc : ${acc} curval : ${curval}`);
     // 
     // return acc +curval;
 // },0);
 
-const mytotal = myNums.reduce((acc , curval) => acc+curval,0)
+// const mytotal = myNums.reduce((acc , curval) => acc+curval,0)
 
-console.log(mytotal);
+// console.log(mytotal);
 
 
 const shoppingCart = [
