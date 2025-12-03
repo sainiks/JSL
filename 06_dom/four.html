@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kixel on Sainiks</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+             color: #ffff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langname){
+        const li = document.createElement('li') ;
+        li.innerHTML = `${langname}`;
+        document.querySelector('.language').appendChild(li);
+    } // basic way to add text node try to avoid using innerHTML for performance and security reasons and for space optimization
+    addLanguage("Python");
+    addLanguage("Typescript");
+
+    function addoptilang (langname){
+        const li = document.createElement('li') ;
+        li.appendChild(document.createTextNode(langname));
+        document.querySelector('.language').appendChild(li);
+    } // preferred way this is more optimised way to add text node 
+    addoptilang("golang");
+
+//Edit a Element
+    const secondlang = document.querySelector('li:nth-child(2)')
+    
+    // not preferred way
+    secondlang.innerHTML = "Mojo";// not recommended do not prefer this way
+
+    // preferred way
+    const newli = document.createElement('li');
+    newli.textContent = "Rust";
+    secondlang.replaceWith(newli); // used with replaceWith method
+
+// 2nd way to edit a element
+    const firstlang = document.querySelector("li:first-child");
+    firstlang.outerHTML = "<li>NextJs</>" // used with outerHTML property
+
+
+//remove a Element
+    const lastlang =document.querySelector("li:last-child");
+    lastlang.remove(); // preferred way to remove an element
+
+</script>
+</html>
