@@ -21,7 +21,6 @@ html {
   #grey {
     background: grey;
   }
-  
   #white {
     background: white;
   }
@@ -30,5 +29,8 @@ html {
   }
   #yellow {
     background: yellow;
+  }
+  #purple{
+    background: purple;
   }
   
